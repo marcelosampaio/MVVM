@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
-class BindingTextField {
+class BindingTextField : UITextField {
     
 }
