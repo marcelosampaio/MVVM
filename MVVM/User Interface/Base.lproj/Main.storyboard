@@ -161,7 +161,13 @@
                             <outlet property="delegate" destination="Zts-jF-n6G" id="DF8-PP-s8a"/>
                         </connections>
                     </tableView>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="yOq-YE-5z6">
+                            <connections>
+                                <action selector="saveAction:" destination="Zts-jF-n6G" id="c4h-mc-5Kj"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emailNameTextField" destination="llL-wc-I1G" id="4yG-hC-hzC"/>
