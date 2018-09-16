@@ -35,7 +35,7 @@ class UsersController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let userViewModel = self.usersListViewModel.userViewModels[indexPath.row]
         
-        cell.textLabel?.text = "\(userViewModel.lastName!), \(userViewModel.firstName!)"
+        cell.textLabel?.text = "\(userViewModel.lastName.value!), \(userViewModel.firstName.value!)"
 
         return cell
     }

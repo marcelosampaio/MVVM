@@ -9,16 +9,26 @@
 import Foundation
 
 class UserViewModel {
-    var firstName : String!
-    var lastName : String!
-    var email : String!
-    var password : String!
+    var firstName : Dynamic<String>!
+    var lastName : Dynamic<String>!
+    var email : Dynamic<String>!
+    var password : Dynamic<String>!
     
-    init(user: User) {
-        self.firstName = user.firstName
-        self.lastName = user.lastName
-        self.email = user.email
-        self.password = user.password
+//    init(user: User) {
+//        self.firstName = user.firstName
+//        self.lastName = user.lastName
+//        self.email = user.email
+//        self.password = user.password
+//    }
+    
+    
+    init(firstName: String, lastName: String, email: String, password: String) {
+        self.firstName = Dynamic<String>(firstName)
+        self.lastName = Dynamic<String>(lastName)
+        self.email = Dynamic<String>(email)
+        self.password = Dynamic<String>(password)
     }
+    
+    
     
 }

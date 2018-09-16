@@ -19,6 +19,7 @@
 		9C05747F214D4FE2003CD0C6 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C05747E214D4FE2003CD0C6 /* UsersListViewModel.swift */; };
 		9C727F17214D8E82003C42F9 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C727F16214D8E81003C42F9 /* BindingTextField.swift */; };
 		9C727F19214D8EC1003C42F9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C727F18214D8EC1003C42F9 /* UserViewModel.swift */; };
+		9C727F1B214EA440003C42F9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C727F1A214EA440003C42F9 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9C05747E214D4FE2003CD0C6 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 		9C727F16214D8E81003C42F9 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 		9C727F18214D8EC1003C42F9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		9C727F1A214EA440003C42F9 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				9C057479214D3C8F003CD0C6 /* RegistrationViewModel.swift */,
 				9C05747E214D4FE2003CD0C6 /* UsersListViewModel.swift */,
 				9C727F18214D8EC1003C42F9 /* UserViewModel.swift */,
+				9C727F1A214EA440003C42F9 /* Dynamic.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C05747A214D3C8F003CD0C6 /* RegistrationViewModel.swift in Sources */,
+				9C727F1B214EA440003C42F9 /* Dynamic.swift in Sources */,
 				9C05747D214D44D2003CD0C6 /* DataAccess.swift in Sources */,
 				9C057477214D3C32003CD0C6 /* User.swift in Sources */,
 				9C057471214D39F2003CD0C6 /* UserDetailController.swift in Sources */,

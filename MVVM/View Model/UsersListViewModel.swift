@@ -20,7 +20,7 @@ class UsersListViewModel {
     private func populateUsers() {
         let users = self.dataAccess.getAllUsers()
         self.userViewModels = users.map { user in
-            return UserViewModel(user: user)
+            return UserViewModel(firstName: user.firstName, lastName: user.lastName, email: user.email, password: user.password)
         }
     }
     

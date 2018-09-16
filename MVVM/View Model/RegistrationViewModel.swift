@@ -15,6 +15,12 @@ class RegistrationViewModel {
     var email : String
     var password : String
     
+    init() {
+        self.firstName = String()
+        self.lastName = String()
+        self.email = String()
+        self.password = String()
+    }
     
     init(firstName: String, lastName: String, email: String, password: String) {
         self.firstName = firstName
@@ -25,6 +31,6 @@ class RegistrationViewModel {
     
     func save() {
         let user = User.init(viewModel: self)
-        print("saved user: \(user)")
+        print("saved user: \(user)       ###############################################")
     }
 }
