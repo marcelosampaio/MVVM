@@ -74,8 +74,17 @@ class UserDetailController: UITableViewController {
         // get values from UI text fields and populate the registration view model
         self.registrationViewModel = RegistrationViewModel.init(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, email: emailNameTextField.text!, password: passwordTextField.text!)
 
-        // convert registration view model to a domain model which can later be passed to a web service, data persistence classes....
-        self.registrationViewModel.save()
+        
+        if self.registrationViewModel.isValid {
+            // convert registration view model to a domain model which can later be passed to a web service, data persistence classes....
+            self.registrationViewModel.save()
+            print("Save OK. registrationModel: \(self.registrationViewModel)")
+        }else{
+            print("Erro: \(self.registrationViewModel.brokenRule)")
+        }
+        
+        
+        
     }
     
 }
