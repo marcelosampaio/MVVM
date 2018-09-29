@@ -11,11 +11,11 @@ import Foundation
 class UsersListViewModel {
     var userViewModels : [UserViewModel] = [UserViewModel]()
     private var dataAccess = DataAccess()
-    
-    init(dataAccess: DataAccess) {
-        self.dataAccess = dataAccess
+
+    init() {
         populateUsers()
     }
+
     
     private func populateUsers() {
         let users = self.dataAccess.getAllUsers()

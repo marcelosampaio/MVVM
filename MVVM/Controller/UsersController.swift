@@ -19,7 +19,7 @@ class UsersController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Users"
-        self.usersListViewModel = UsersListViewModel(dataAccess: self.dataAccess)
+        self.usersListViewModel = UsersListViewModel()
         self.tableView.reloadData()
     }
 
